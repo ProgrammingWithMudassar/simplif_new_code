@@ -57,8 +57,8 @@ function App() {
       <Router>
       <Header token={token} onLogout={logout}/>
         <Routes>
-          <Route path='/' element={<MarketingPage />} />
-          <Route path='/profile' element={<Profile />} />
+          {/* <Route path='/' element={<MarketingPage />} /> */}
+          <Route path='/' element={<Profile />} />
           <Route path='/plateform/:id' element={<Plateform />} />
           <Route path='/auth/account-type' element={<AccountType />} />
           {/* login  */}

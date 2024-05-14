@@ -46,7 +46,7 @@ const Header = ({ token, onLogout }) => {
             px: { xs: 2, sm: 4, md: 6 },
             height: "90px",
         }}>
-            <Link to="/profile">
+            <Link to="/">
                 <Box sx={{
                     width: { xs: '80px', sm: '100px', md: '120px', lg: '160px' },
                     height: { xs: '23px', sm: '30px', md: '40px', lg: '45px' },
@@ -58,7 +58,7 @@ const Header = ({ token, onLogout }) => {
             {
                 token === 1 ?
                     <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-                        <Link to="/profile">
+                        <Link to="/">
                             <Typography variant="body1" color={theme.palette.secondary.main} sx={{ fontWeight: 'bold', cursor: 'pointer' }}>Marketplace</Typography>
                         </Link>
                         <Link to="/orders">
@@ -88,7 +88,7 @@ const Header = ({ token, onLogout }) => {
                                 <Link to="/profile-management">
                                     <Typography variant="body1" color="initial" sx={{ cursor: 'pointer', p: 0.7, borderRadius: '5px', ":hover": { background: '#C9C9C9' } }}>Personal Detail</Typography>
                                 </Link>
-                                <Link to="/profile">
+                                <Link to="/">
                                     <Typography variant="body1" color="initial" sx={{ cursor: 'pointer', p: 0.7, borderRadius: '5px', ":hover": { background: '#C9C9C9' } }}>customer support</Typography>
                                 </Link>
                                 <Typography onClick={handleOpenLogoutDialog} variant="body1" color="initial" sx={{ cursor: 'pointer', p: 0.7, borderRadius: '5px', ":hover": { background: '#C9C9C9' } }}>LogOut</Typography>

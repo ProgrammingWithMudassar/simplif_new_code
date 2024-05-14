@@ -25,7 +25,7 @@ const BrandEmailVerify = () => {
             console.log("res", res);
             if (res?.data?.status === 200) {
                 localStorage.clear();
-                navigate("/profile")
+                navigate("/")
                 return showToast(res?.data?.message, 'success');
             } else {
                 return showToast("OTP expired or invalid", 'error');

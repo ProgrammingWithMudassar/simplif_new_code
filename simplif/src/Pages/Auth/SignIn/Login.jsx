@@ -38,7 +38,7 @@ const Login = () => {
             if (res?.data?.status === 200) {
                 Cookies.set('userToken', res.data.token, { expires: 7 });
                 showToast(res?.data?.message, 'success');
-                navigate("/profile");
+                navigate("/");
             }
             else if (res?.error?.status === 401) {
                 return showToast(res?.error?.data?.message, 'error');
